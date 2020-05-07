@@ -11,7 +11,7 @@
 		4977D24E2463B36100200EE4 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4977D24D2463B36100200EE4 /* libSDL2-2.0.0.dylib */; };
 		4977D2502463B37400200EE4 /* libSDL2_image-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4977D24F2463B37400200EE4 /* libSDL2_image-2.0.0.dylib */; };
 		4977D2542463B3A200200EE4 /* FocusEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4977D2522463B3A200200EE4 /* FocusEngine.cpp */; };
-		4977D2582463B6DE00200EE4 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4977D2562463B6DE00200EE4 /* Window.cpp */; };
+		4998962D24644B8C005953EC /* RenderingContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4998962B24644B8C005953EC /* RenderingContext.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,8 +33,8 @@
 		4977D24F2463B37400200EE4 /* libSDL2_image-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_image-2.0.0.dylib"; path = "../../../../usr/local/Cellar/sdl2_image/2.0.5/lib/libSDL2_image-2.0.0.dylib"; sourceTree = "<group>"; };
 		4977D2522463B3A200200EE4 /* FocusEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FocusEngine.cpp; sourceTree = "<group>"; };
 		4977D2532463B3A200200EE4 /* FocusEngine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FocusEngine.hpp; sourceTree = "<group>"; };
-		4977D2562463B6DE00200EE4 /* Window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
-		4977D2572463B6DE00200EE4 /* Window.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Window.hpp; sourceTree = "<group>"; };
+		4998962B24644B8C005953EC /* RenderingContext.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RenderingContext.cpp; sourceTree = "<group>"; };
+		4998962C24644B8C005953EC /* RenderingContext.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RenderingContext.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,8 @@
 		4977D2552463B6D300200EE4 /* Rendering */ = {
 			isa = PBXGroup;
 			children = (
-				4977D2562463B6DE00200EE4 /* Window.cpp */,
-				4977D2572463B6DE00200EE4 /* Window.hpp */,
+				4998962B24644B8C005953EC /* RenderingContext.cpp */,
+				4998962C24644B8C005953EC /* RenderingContext.hpp */,
 			);
 			path = Rendering;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4977D2542463B3A200200EE4 /* FocusEngine.cpp in Sources */,
-				4977D2582463B6DE00200EE4 /* Window.cpp in Sources */,
+				4998962D24644B8C005953EC /* RenderingContext.cpp in Sources */,
 				4977D2462463B31800200EE4 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
