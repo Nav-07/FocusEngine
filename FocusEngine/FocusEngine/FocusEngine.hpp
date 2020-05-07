@@ -1,6 +1,8 @@
 #pragma once
 #include <string>
 
+#include "RenderingContext.hpp"
+
 class FocusEngine_EntryPoint {
 protected:
     // init(): This method is called when the constructor of the derived class is called and is responsible for initializing game scripts and making threads, etc.
