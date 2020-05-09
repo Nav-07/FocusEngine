@@ -1,23 +1,22 @@
-#include "FocusEngine.hpp"
-
-#include <iostream>
-using namespace std;
+#include <SDL2/SDL.h>
+#include <string>
+#include "FocusEngine/FocusEngine.hpp"
 
 class Example : public FocusEngine_EntryPoint {
-protected:
-    void init() override {
-        RenderingContext::getInstance()->init("Example", 640, 480);
-    }
-    void runLoop() override {
-        RenderingContext::getInstance()->pollEvents();
-    }
-    void destroy() override {
-        RenderingContext::getInstance()->destroy();
-    }
+private:
 public:
-    Example(): FocusEngine_EntryPoint() {
+    SDL_Event event;
+    void init() override {
+        this->constructWindow("Example", 640, 480);
     }
+    void runEngine() override {
+        SDL_PollEvent(&event);
+    }
+    void destroy() override {}
+protected:
 };
+
 int main() {
-    runGame(new Example(), RenderingContext::getInstance()->isOpen());
+    runGame(new Example());
+    return 0;
 }
