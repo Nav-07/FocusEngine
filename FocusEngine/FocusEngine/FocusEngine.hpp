@@ -2,6 +2,9 @@
 #include <SDL2/SDL.h>
 #include <string>
 
+// the Engine Imports
+#include "Engine Layers/EventLayer.hpp"
+
 // The Entry Point for the Game Engine, this single class game engine, has just one abstract class that is used to initialize the basis of the game.
 // This class handles the construction of window and all the objects are instantiated inside this class.
 class FocusEngine_EntryPoint {

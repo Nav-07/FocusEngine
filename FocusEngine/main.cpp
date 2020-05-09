@@ -1,7 +1,6 @@
 #include <SDL2/SDL.h>
 #include <string>
 #include "FocusEngine/FocusEngine.hpp"
-#include "FocusEngine/Engine Layers/EventLayer.hpp"
 
 class Example : public FocusEngine_EntryPoint {
 private:
