@@ -11,6 +11,7 @@
 		4977D24E2463B36100200EE4 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4977D24D2463B36100200EE4 /* libSDL2-2.0.0.dylib */; };
 		4977D2502463B37400200EE4 /* libSDL2_image-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4977D24F2463B37400200EE4 /* libSDL2_image-2.0.0.dylib */; };
 		49A5679B2466BF7900C0F441 /* FocusEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49A567992466BF7900C0F441 /* FocusEngine.cpp */; };
+		49A5679F2466C7F400C0F441 /* EventLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49A5679D2466C7F400C0F441 /* EventLayer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,8 @@
 		4977D24F2463B37400200EE4 /* libSDL2_image-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_image-2.0.0.dylib"; path = "../../../../usr/local/Cellar/sdl2_image/2.0.5/lib/libSDL2_image-2.0.0.dylib"; sourceTree = "<group>"; };
 		49A567992466BF7900C0F441 /* FocusEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FocusEngine.cpp; sourceTree = "<group>"; };
 		49A5679A2466BF7900C0F441 /* FocusEngine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FocusEngine.hpp; sourceTree = "<group>"; };
+		49A5679D2466C7F400C0F441 /* EventLayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EventLayer.cpp; sourceTree = "<group>"; };
+		49A5679E2466C7F400C0F441 /* EventLayer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EventLayer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +88,20 @@
 		49A567982466BF5200C0F441 /* FocusEngine */ = {
 			isa = PBXGroup;
 			children = (
+				49A5679C2466C7E600C0F441 /* Engine Layers */,
 				49A567992466BF7900C0F441 /* FocusEngine.cpp */,
 				49A5679A2466BF7900C0F441 /* FocusEngine.hpp */,
 			);
 			path = FocusEngine;
+			sourceTree = "<group>";
+		};
+		49A5679C2466C7E600C0F441 /* Engine Layers */ = {
+			isa = PBXGroup;
+			children = (
+				49A5679D2466C7F400C0F441 /* EventLayer.cpp */,
+				49A5679E2466C7F400C0F441 /* EventLayer.hpp */,
+			);
+			path = "Engine Layers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49A5679F2466C7F400C0F441 /* EventLayer.cpp in Sources */,
 				49A5679B2466BF7900C0F441 /* FocusEngine.cpp in Sources */,
 				4977D2462463B31800200EE4 /* main.cpp in Sources */,
 			);

@@ -1,16 +1,19 @@
 #include <SDL2/SDL.h>
 #include <string>
 #include "FocusEngine/FocusEngine.hpp"
+#include "FocusEngine/Engine Layers/EventLayer.hpp"
 
 class Example : public FocusEngine_EntryPoint {
 private:
+    EventLayer layer;
 public:
-    SDL_Event event;
     void init() override {
         this->constructWindow("Example", 640, 480);
     }
     void runEngine() override {
-        SDL_PollEvent(&event);
+        layer.pollEvents();
+        if (layer.eventOccured(eventType::quit))
+            mIsRunning = false;
     }
     void destroy() override {}
 protected:
